@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="js/animate.css" />
+    <script
+      src="https://kit.fontawesome.com/2baad1d54e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="ques">
+      <span><button class="btn-show-question">Click Me</button></span>
+
+      <div class="overlay"></div>
+      <div class="box-q">
+        <div class="wrapper-ques">
+          <h2 class="title">Question 1 of 9</h2>
+          <p class="quest">Siapa yg sedang mengakses web ini?</p>
+          <button class="answer answer1" value="1">Indi estyana</button>
+          <button class="answer answer1" value="2">GA MGKIN ORG LAIN</button>
+          <button class="answer answer1" value="3">APALAGI PAK EDI</button>
+          <input type="hidden" id="answerBox1" />
+          <button class="next" id="btnAnswerBox1">Answer</button>
+          <button class="next" id="btnNextBox1" style="display: none;">
+            Next
+          </button>
+        </div>
+        <div class="bukti">
+          <button value="1">
+            <i class="fa fa-circle"></i>
+          </button>
+          <button value="2">
+            <i class="fa fa-circle"></i>
+          </button>
+          <button value="3">
+            <i class="fa fa-circle"></i>
+          </button>
+          <button value="4">
+            <i class="fa fa-circle"></i>
+          </button>
+          <button value="5">
+            <i class="fa fa-circle"></i>
+          </button>
+          <button value="6">
+            <i class="fa fa-circle"></i>
+          </button>
+          <button value="7">
+            <i class="fa fa-circle"></i>
+          </button>
+          <button value="8">
+            <i class="fa fa-circle"></i>
+          </button>
+          <button value="9">
+            <i class="fa fa-circle"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="countdown-wrapper">
+      <img src="images/hias-kiri.svg" class="hiasan-kiri" alt="" />
+      <img src="images/hias-kanan.svg" class="hiasan-kanan" alt="" />
+      <h2 class="text text-head">
+        Birthday Count
+      </h2>
+      <h2
+        class="text text-open-me"
+        style="
+          font-family: 'Acme', sans-serif;
+          margin-top: 200px;
+          font-size: 25px;
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%, 0) rotate(20deg);
+          z-index: 1;
+        "
+      >
+        open me
+      </h2>
+      <center>
+        <img src="images/kado.png" alt="" class="kado infinite" />
+      </center>
+      <h2 class="text" style="font-size: 30px;">ON</h2>
+      <div id="timerCountdown" class="text"></div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
